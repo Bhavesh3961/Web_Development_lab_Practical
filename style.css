@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F6F5FA;
+    color: #28334A;
+    padding: 35px 15px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+header {
+    background: #28334A;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #D5D6E5;
+}
+
+.total-box {
+    background: #E9E8F5;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.total-box p {
+    color: #77718F;
+}
+
+.total-box h2 {
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+.form-box, .list-box {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 17px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #8173C7;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 14px;
+    background: #8173C7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6C5DB0;
+}
+
+.list-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-heading h3 {
+    margin: 0;
+}
+
+.list-heading select {
+    width: 130px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.deleteBtn {
+    width: auto;
+    margin: 0;
+    padding: 7px 12px;
+    background: #D66C75;
+}
+
+.deleteBtn:hover {
+    background: #BB505C;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    padding: 25px 0;
+}
+
+footer {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    padding: 10px;
+}
+
+@media (max-width: 500px) {
+    .input-row {
+        flex-direction: column;
+    }
+
+    .list-heading {
+        align-items: flex-start;
+    }
+}
