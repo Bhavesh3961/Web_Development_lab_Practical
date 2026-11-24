@@ -27,16 +27,23 @@ header {
     border-radius: 8px;
 }
 
-header p { color: #dce8f3; margin-top: 8px; }
+header p {
+    color: #dce8f3;
+    margin-top: 8px;
+}
 
 .total-box, .form-box {
     padding: 22px 0;
-    border-bottom: 1px solid #ddd;
 }
 
-.total-box h2 { font-size: 32px; margin-top: 8px; }
+.total-box h2 {
+    font-size: 32px;
+    margin-top: 8px;
+}
 
-h3 { margin-bottom: 15px; }
+h3 {
+    margin-bottom: 15px;
+}
 
 input, select {
     width: 100%;
@@ -46,14 +53,18 @@ input, select {
     margin-bottom: 10px;
 }
 
-.input-row, .list-heading, .expense-item {
+.input-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 10px;
 }
 
+.input-row > * {
+    flex: 1;
+    min-width: 0;
+}
+
 button {
+    width: 100%;
     padding: 12px;
     background: #3979b9;
     color: white;
@@ -62,16 +73,12 @@ button {
     cursor: pointer;
 }
 
-.form-box button { width: 100%; }
-button:hover { background: #285d91; }
+button:hover {
+    background: #285d91;
+}
 
-.list-box { padding-top: 22px; }
-.list-heading select { width: 130px; }
-.expense-item { padding: 15px 5px; border-bottom: 1px solid #ddd; }
-.deleteBtn { background: #dc6666; }
-
-.empty, footer {
-    text-align: center;
-    color: #888;
-    padding: 20px 0;
+@media (max-width: 500px) {
+    .input-row {
+        flex-direction: column;
+    }
 }

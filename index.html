@@ -1,8 +1,8 @@
-<!-- SIR AI SA NAHI BANAYA HAI MERI MEHNAT HAI  -->
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mera Kharcha</title>
+    <title>Student Expense Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,8 +11,8 @@
     <div class="container">
 
         <header>
-            <h1>Expense Tracker </h1>
-            <p>Aaj Bachenga To kal Khaenga!!</p>
+            <h1>Student Expense Tracker</h1>
+            <p>A record of where my money goes.</p>
         </header>
 
         <div class="total-box">
@@ -21,10 +21,17 @@
         </div>
 
         <div class="form-box">
+
             <h3>Add your expense</h3>
-            <input type="text" id="name" placeholder="What did you spend on?">
+
+            <input type="text" id="name"
+                placeholder="What did you spend on?">
+
             <div class="input-row">
-                <input type="number" id="amount" placeholder="Amount (₹)">
+
+                <input type="number" id="amount"
+                    placeholder="Amount (₹)">
+
                 <select id="category">
                     <option value="">Category</option>
                     <option value="Food">Food</option>
@@ -33,31 +40,15 @@
                     <option value="Education">Education</option>
                     <option value="Other">Other</option>
                 </select>
+
             </div>
+
             <button onclick="addExpense()">+ Add Expense</button>
-        </div>
-
-        <div class="list-box">
-            <div class="list-heading">
-                <h3>Recent Expenses</h3>
-                <select id="filter" onchange="displayExpenses()">
-                    <option value="All">All</option>
-                    <option value="Food">Food</option>
-                    <option value="Travel">Travel</option>
-                    <option value="Shopping">Shopping</option>
-                    <option value="Education">Education</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div id="expenseList">
-                <p class="empty">No expenses added yet.</p>
-            </div>
 
         </div>
-        <footer>
-            Made by a student, for students.
-        </footer>
+
     </div>
+
     <script src="server.js"></script>
 
 </body>
